@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <title>PUB Blood Donation!</title>
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <h3>Blood Donation</h3>
+            </div>
+            <div class="add-btn">
+                <button aria-label="Add New Module">+ Create New Account</button>
+            </div>
+            <ul class="menu">
+                <li aria-label="Dashboard">
+                    <a href="#"> <i class="fas fa-tachometer-alt"></i> Home </a>
+                </li>
+                <li aria-label="Overview">
+                    <a href="pages/overview.html">
+                        <i class="fas fa-chart-line"></i> Overview
+                    </a>
+                </li>
+                <li aria-label="Courses">
+                    <a href="pages/courses.html">
+                        <i class="fas fa-book"></i> Courses
+                    </a>
+                </li>
+                <li aria-label="Students">
+                    <a href="pages/students.html">
+                        <i class="fas fa-users"></i> Students
+                    </a>
+                </li>
+                <li aria-label="Teachers">
+                    <a href="pages/teachers.html">
+                        <i class="fas fa-chalkboard-teacher"></i> Teachers
+                    </a>
+                </li>
+                <li aria-label="Exam">
+                    <a href="pages/exam.html">
+                        <i class="fas fa-clipboard"></i> Exam
+                    </a>
+                </li>
+                <li aria-label="Result">
+                    <a href="pages/result.html">
+                        <i class="fas fa-clipboard-check"></i> Result
+                    </a>
+                </li>
+                <li aria-label="Materials">
+                    <a href="pages/materials.html">
+                        <i class="fas fa-paperclip"></i> Materials
+                    </a>
+                </li>
+                <li aria-label="Videos">
+                    <a href="pages/videos.html">
+                        <i class="fas fa-video"></i> Videos
+                    </a>
+                </li>
+            </ul>
+            <div class="invite-section">
+                <button aria-label="Get the Link">Get the Link</button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <h1>PUB Blood Donation</h1>
+                <div class="search-container">
+                    <input type="text" placeholder="Search" aria-label="Search" />
+                    <button class="search-btn" aria-label="Search Button">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+                <div class="profile-container">
+                    <span class="profile-name" id="profile-name">Md. Ahsanur Rahaman</span>
+                    <img id="profile-img" class="profile-img" src="images/Ahsan.jpg" alt="Profile" />
+                    <ul id="context-menu" class="context-menu" role="menu">
+                        <li role="menuitem">
+                            <a href="pages/profile.html"><i class="fas fa-user"></i> Profile</a>
+                        </li>
+                        <li role="menuitem">
+                            <a href="pages/settings.html"><i class="fas fa-cog"></i> Settings</a>
+                        </li>
+                        <li role="menuitem">
+                            <a href="pages/loginout.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+
+            <!-- Dynamic Content -->
+            <section class="content">
+                <div class="stats">
+                    <div class="stat-box">Total Students<br /><span>1220</span></div>
+                    <div class="stat-box">Total Teachers<br /><span>120</span></div>
+                    <div class="stat-box">Total Courses<br /><span>15</span></div>
+                    <div class="stat-box">Faculty Room<br /><span>100</span></div>
+                </div>
+
+                <div class="container"></div>
+        </main>
+        <footer>
+
+        </footer>
+
+
+        <script src="./JS/script.js"></script>
+</body>
+
+</html>
