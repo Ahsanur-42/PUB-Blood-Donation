@@ -17,102 +17,65 @@
                 <h3>Blood Donation</h3>
             </div>
             <div class="add-btn">
-                <button aria-label="Add New Module">+ Create New Account</button>
+                <button aria-label="Register as a Donor">+ Register Donor</button>
+            </div>
+            <div class="add-btn">
+                <button aria-label="Find a Donor">🔍 Find Donor</button>
             </div>
             <ul class="menu">
-                <li aria-label="Dashboard">
-                    <a href="#"> <i class="fas fa-tachometer-alt"></i> Home </a>
-                </li>
-                <li aria-label="Overview">
-                    <a href="pages/overview.html">
-                        <i class="fas fa-chart-line"></i> Overview
+                <li aria-label="Dashboard" data-content="dashboard">
+                    <a href="javascript:void(0);" onclick="loadContent('dashboard')">
+                        <i class="fas fa-tachometer-alt"></i><span> Dashboard</span>
                     </a>
                 </li>
-                <li aria-label="Courses">
-                    <a href="pages/courses.html">
-                        <i class="fas fa-book"></i> Courses
+                <li aria-label="About Blood Donation" data-content="about">
+                    <a href="javascript:void(0);" onclick="loadContent('about')">
+                        <i class="fas fa-book"></i><span> About Blood Donation</span>
                     </a>
                 </li>
-                <li aria-label="Students">
-                    <a href="pages/students.html">
-                        <i class="fas fa-users"></i> Students
+                <li aria-label="Eligibility Criteria" data-content="eligibility">
+                    <a href="javascript:void(0);" onclick="loadContent('eligibility')">
+                        <i class="fas fa-check-circle"></i><span> Eligibility Criteria</span>
                     </a>
                 </li>
-                <li aria-label="Teachers">
-                    <a href="pages/teachers.html">
-                        <i class="fas fa-chalkboard-teacher"></i> Teachers
+                <li aria-label="How to Prepare for Donation" data-content="preparation">
+                    <a href="javascript:void(0);" onclick="loadContent('preparation')">
+                        <i class="fas fa-chalkboard-teacher"></i><span> How to Prepare</span>
                     </a>
                 </li>
-                <li aria-label="Exam">
-                    <a href="pages/exam.html">
-                        <i class="fas fa-clipboard"></i> Exam
+                <li aria-label="Partner Organizations" data-content="partners">
+                    <a href="javascript:void(0);" onclick="loadContent('partners')">
+                        <i class="fas fa-handshake"></i><span> Partner Organizations</span>
                     </a>
                 </li>
-                <li aria-label="Result">
-                    <a href="pages/result.html">
-                        <i class="fas fa-clipboard-check"></i> Result
+                <li aria-label="Gallery" data-content="gallery">
+                    <a href="javascript:void(0);" onclick="loadContent('gallery')">
+                        <i class="fas fa-image"></i><span> Images</span>
                     </a>
                 </li>
-                <li aria-label="Materials">
-                    <a href="pages/materials.html">
-                        <i class="fas fa-paperclip"></i> Materials
-                    </a>
-                </li>
-                <li aria-label="Videos">
-                    <a href="pages/videos.html">
-                        <i class="fas fa-video"></i> Videos
+                <li aria-label="Contact Us" data-content="contact">
+                    <a href="javascript:void(0);" onclick="loadContent('contact')">
+                        <i class="fas fa-envelope"></i><span> Contact Us</span>
                     </a>
                 </li>
             </ul>
+
+
+
             <div class="invite-section">
-                <button aria-label="Get the Link">Get the Link</button>
+                <button id="copy-link-btn" aria-label="Get the Link">Get the Link</button>
+                <p id="copy-message" class="copy-message"></p> <!-- Message container -->
             </div>
         </aside>
 
-        <!-- Main Content -->
-        <main class="main-content">
-            <header class="header">
-                <h1>PUB Blood Donation</h1>
-                <div class="search-container">
-                    <input type="text" placeholder="Search" aria-label="Search" />
-                    <button class="search-btn" aria-label="Search Button">
-                        <i class="fa fa-search"></i>
-                    </button>
-                </div>
-                <div class="profile-container">
-                    <span class="profile-name" id="profile-name">Md. Ahsanur Rahaman</span>
-                    <img id="profile-img" class="profile-img" src="images/Ahsan.jpg" alt="Profile" />
-                    <ul id="context-menu" class="context-menu" role="menu">
-                        <li role="menuitem">
-                            <a href="pages/profile.html"><i class="fas fa-user"></i> Profile</a>
-                        </li>
-                        <li role="menuitem">
-                            <a href="pages/settings.html"><i class="fas fa-cog"></i> Settings</a>
-                        </li>
-                        <li role="menuitem">
-                            <a href="pages/loginout.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
-                        </li>
-                    </ul>
-                </div>
-            </header>
 
-            <!-- Dynamic Content -->
-            <section class="content">
-                <div class="stats">
-                    <div class="stat-box">Total Students<br /><span>1220</span></div>
-                    <div class="stat-box">Total Teachers<br /><span>120</span></div>
-                    <div class="stat-box">Total Courses<br /><span>15</span></div>
-                    <div class="stat-box">Faculty Room<br /><span>100</span></div>
-                </div>
 
-                <div class="container"></div>
-        </main>
-        <footer>
-
+        <!-- Footer -->
+        <footer class="footer">
         </footer>
+    </div>
 
-
-        <script src="./JS/script.js"></script>
+    <script src="./JS/script.js"></script>
 </body>
 
 </html>
